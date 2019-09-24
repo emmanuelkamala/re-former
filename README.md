@@ -1,6 +1,6 @@
 # README
 
-This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum. Find it at https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms
+This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum. The purpose of this project is to learn on how to create forms in RoR and use it to interact with the database using Active Record. Find it at https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms
 
 ## Getting started
 
