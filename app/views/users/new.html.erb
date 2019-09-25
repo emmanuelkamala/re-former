@@ -5,9 +5,10 @@
   <label>Password:</label> <input type="password" name="user[password]" minlength="8">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <input type="submit" value="Submit">
-</form> -->
+</form> 
+-->
 
-
+<!--
 <%= form_tag("/users", :method => "post") do %>
      <%= label_tag("Username:") %>
      <%= text_field(:user, :username) %>
@@ -17,5 +18,23 @@
     <%= password_field(:user, :password) %>
     <%= submit_tag("Submit") %>
  <% end %>
+ -->
 
+<%= form_for(@user) do |f| %>
+
+    <%= f.label 'Username' %>
+    <%= f.text_field :username %>
+    <br /> <br />
+  
+    <%= f.label 'Email' %>
+    <%= f.email_field :email%>
+    <br /> <br />
+  
+    <%= f.label 'Password' %>
+    <%= f.password_field :password %>
+    <br /> <br />
+  
+    <%= f.submit "Create" %>
+  
+  <% end %>
  

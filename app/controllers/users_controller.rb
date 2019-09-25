@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def new
+    @user = User.new({:username => "Enter your username here", :email => "johndoe@example.com"})
   end
 
   def create
