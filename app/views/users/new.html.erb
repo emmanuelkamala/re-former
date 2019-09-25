@@ -1,8 +1,21 @@
 <h1>Welcome to Forms</h1>
-<form action="/users" method="POST">
-  <p>User name: <input type="text" name="user[username]"></p>
-  <p>Email: <input type="email" name="user[email]"></p>
-  <p>Password: <input type="password" name="user[password]" minlength="8"></p>
+<!-- <form action="/users" method="POST">
+  <label>Username:</label> <input type="text" name="user[username]">
+  <label>Email:</label> <input type="email" name="user[email]">
+  <label>Password:</label> <input type="password" name="user[password]" minlength="8">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <input type="submit" value="Submit">
-</form>
+</form> -->
+
+
+<%= form_tag("/users", :method => "post") do %>
+     <%= label_tag("Username:") %>
+     <%= text_field(:user, :username) %>
+    <%= label_tag("Email:") %>
+    <%= email_field(:user, :email) %>
+    <%= label_tag("Password:") %>
+    <%= password_field(:user, :password) %>
+    <%= submit_tag("Submit") %>
+ <% end %>
+
+ 
