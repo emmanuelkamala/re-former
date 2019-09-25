@@ -48,3 +48,15 @@ Layout/LeadingCommentSpace:
   Enabled: false
 Layout/SpaceAfterComma:
   Enabled: false
+Layout/TrailingWhitespace:
+  Enabled: false
+Style/MutableConstant:
+  Enabled: false
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+Layout/AlignHash:
+  Enabled: false
+Style/BracesAroundHashParameters:
+  Enabled: false
+Style/HashSyntax:
+  Enabled: false
