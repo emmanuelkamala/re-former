@@ -1,0 +1,61 @@
+AllCops:
+  Exclude:
+    - "bin/*"
+    - "db/**/*"
+    - "config/**/*"
+    - "Guardfile"
+    - "Rakefile"
+  DisplayCopNames: true
+
+Metrics/LineLength:
+  Max: 120
+Metrics/MethodLength:
+  Include: ["app/controllers/*"]
+  Max: 20
+Metrics/AbcSize:
+  Include: ["app/controllers/*"]
+  Max: 30
+Metrics/ClassLength:
+  Max: 150
+Metrics/BlockLength:
+  ExcludedMethods: ['describe']
+
+Style/Documentation:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: false
+Layout/EmptyLinesAroundClassBody:
+  Enabled: false
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+Style/GlobalVars:
+  Enabled: false
+
+Layout/AlignHash:
+  EnforcedColonStyle: key
+Layout/ExtraSpacing:
+  AllowForAlignment: false
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+  EnforcedStyle: indented
+Layout/IndentationWidth:
+  Enabled: false
+Layout/LeadingCommentSpace:
+  Enabled: false
+Layout/SpaceAfterComma:
+  Enabled: false
+Layout/TrailingWhitespace:
+  Enabled: false
+Style/MutableConstant:
+  Enabled: false
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+Style/HashSyntax:
+  Enabled: false
